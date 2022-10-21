@@ -7,9 +7,10 @@ viewer.grid.setGrid();
 viewer.axes.setAxes();
 
 async function loadIfc(url) {
-    await viewer.IFC.setWasmPath("../../../");
+    //await viewer.IFC.setWasmPath("../../../");
+    await viewer.IFC.setWasmPath("./");
     const model = await viewer.IFC.loadIfcUrl(url);
     viewer.shadowDropper.renderShadow(model.modelID);
 }
 
-loadIfc('IFC Files/AC20-FZK-Haus.ifc');
+loadIfc('IFCFiles/AC20-FZK-Haus.ifc');
