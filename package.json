@@ -3,8 +3,10 @@
   "version": "0.0.1",
   "description": "IFC.js Tooling Section Exercice",
   "main": "viewer.js",
+  "type": "module",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "author": "Arnaud Candaele",
   "license": "ISC",
